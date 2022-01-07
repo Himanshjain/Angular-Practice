@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import {Todo} from '../../Todo';
+import {TodoItemComponent} from '../todo-item/todo-item.component';
 
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+//   template: 
+//   `<div *ngFor="let todo of todos">
+//   <app-todo-item [todo]="todo"></app-todo-item>
+// </div>
+// `,
+  styleUrls: ['./todos.component.css'],
 })
 export class TodosComponent implements OnInit {
 
