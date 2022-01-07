@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Todo} from '../../Todo';
+// import {TodoItemComponent} from './todo-item/todo-item.component';
+
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
@@ -19,13 +21,13 @@ export class TodosComponent implements OnInit {
         {
           sno: 2,
           title: "Task2",
-          desc: "Task1 Desc",
+          desc: "Task2 Desc",
           active:true
         },
         {
           sno: 3,
           title: "Task2",
-          desc: "Task1 Desc",
+          desc: "Task3 Desc",
           active:true
         }
       ]
