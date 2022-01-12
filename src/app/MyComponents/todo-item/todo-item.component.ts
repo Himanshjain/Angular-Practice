@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input } from '@angular/core';
+import {Todo} from '../../Todo';
 
 @Component({
   selector: 'app-todo-item',
@@ -11,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoItemComponent implements OnInit {
 
+  @Input() todo:Todo;
   constructor() { }
-
   ngOnInit() {
+  }
+  onClick(){
+    console.log("onlcick has been triggered");
   }
 
 }
